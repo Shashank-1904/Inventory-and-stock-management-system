@@ -1,0 +1,111 @@
+.required-label::after {
+    content: " *";
+    color: #e74a3b;
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Success Toast */
+.toast.success {
+    background-color: green;
+}
+
+/* Error Toast */
+.toast.error {
+    background-color: red;
+}
+
+/* Toast text */
+.toast-text {
+    flex: 1;
+}
+
+/* Close button */
+.toast-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 0;
+}
+
+/* Show toast */
+.toast.show {
+    display: flex;
+    opacity: 1;
+}
+
+
+.dataTables_filter {
+    float: right !important;
+    /* text-align: right !important; */
+}
+
+.dataTables_paginate {
+    float: right !important;
+}
+
+ .action-buttons a {
+        display: inline-block;
+        margin: 0 5px;
+}
+
+.table-responsive {
+        width: 100% !important;
+        table-layout: auto !important;
+        white-space: nowrap;
+    }
+
+
+    /* Scrollbar for Low Stock Alerts Box */
+    .low-stock-box {
+        max-height: 200px;
+        overflow-y: auto;
+        padding-right: 5px;
+    }
+
+    .low-stock-box::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .low-stock-box::-webkit-scrollbar-thumb {
+        background: #dc3545;
+        border-radius: 10px;
+    }
+
+    .low-stock-box::-webkit-scrollbar-track {
+        background: #f8d7da;
+    }
+
+    .chart-card {
+    border-radius: 8px;
+}
+
+.chart-container {
+    position: relative;
+    height: 350px;     /* Fixed height */
+    width: 100%;
+}
+
+.chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
