@@ -1,5 +1,5 @@
 <?php
-$relativePath = "/MyProjects/Ex-task/";
+$relativePath = "/MyProjects/Inventory-and-stock-management-system/";
 ?>
 <!-- Sidebar -->
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">

@@ -53,8 +53,9 @@ Installation
 ==============================================================
 
 1. Clone Repository :
-   git clone https://github.com/<your-username>/<repo-name>.git
+   git clone https://github.com/Shashank-1904/Inventory-and-stock-management-system.git
    Move it to: xampp/htdocs/
+   Replace the relative path from the inlcudes/sidebar for the redirection
 
 2. Import Database :
    Open phpMyAdmin
