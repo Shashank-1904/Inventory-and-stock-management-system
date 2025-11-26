@@ -59,8 +59,8 @@ Installation
 
 2. Import Database :
    Open phpMyAdmin
-   Import database.sql (present in project root)
-   Update database credentials in : invconfig.php
+   Import expandx_internship_project.sql (present in project root)
+   Update database credentials if required in : invconfig.php
 
 3. Access Application :
    Open in browser : http://localhost/<your-folder-name>/home/

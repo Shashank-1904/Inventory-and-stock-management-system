@@ -920,7 +920,7 @@ class invFront extends config
                 $query .= " AND si.purchasedate <= '$to'";
             }
 
-            $query .= " ORDER BY si.stockintime DESC";
+            $query .= " ORDER BY si.purchasedate DESC";
 
             $this->query = $query;
             $this->setter();
@@ -955,7 +955,7 @@ class invFront extends config
                 $query .= " AND so.useddate <= '$to'";
             }
 
-            $query .= " ORDER BY so.stockouttime DESC";
+            $query .= " ORDER BY so.useddate DESC";
 
             $this->query = $query;
             $this->setter();
@@ -966,7 +966,7 @@ class invFront extends config
         }
 
         usort($ledger, function ($a, $b) {
-            return strtotime($b['movementtime']) - strtotime($a['movementtime']);
+            return strtotime($b['movementdate']) - strtotime($a['movementdate']);
         });
 
         return $ledger;
